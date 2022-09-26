@@ -1,0 +1,209 @@
+:root {
+
+    /* Cores Primarias  */
+
+    --darkcyan: hsl(158, 36%, 37%);
+    --cream: hsl(30, 38%, 92%);
+    
+
+    /* Cores Neutras  */
+
+    --verydarkblue: hsl(212, 21%, 14%);
+    --darkgrayishblue: hsl(228, 12%, 48%);
+    --white: hsl(0, 0%, 100%);
+
+    /* Fonte  */
+
+    --fontsize: 14px;
+    --familyM: Montserrat;
+    --familyF: Fraunces;
+    --weight5: 500;
+    --weight7: 700;
+
+}
+
+/* INICIO */
+
+body {
+
+    background-color: var(--white);
+    background-color: var(--cream);
+    max-width: 100%;
+    height: 620px;
+    margin: 50px;
+    margin-top: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.attribution {
+    font-size: 11px;
+    position: absolute;
+    top: 700px;
+
+
+
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
+
+h1 {
+    position: relative;
+    top: -5px;
+    font-size: 15px;
+    letter-spacing: 3px;
+    font-weight: var(--weight5);
+    font-family: var(--familyM);
+
+}
+
+h2 {
+    position: relative;
+    top: -45px;
+    font-size: 33px;
+    letter-spacing: -1px;
+    font-family: var(--familyF);
+
+}
+
+
+h3 {
+    position: relative;
+    top: -135px;
+    font-size: 30px;
+    font-family: var(--familyF);
+    color: var(--darkcyan);
+
+}
+
+
+p {
+    font-size: var(--fontsize);
+    font-family: var(--familyM);
+    position: relative;
+    top: -90px;
+
+}
+
+
+
+
+.tabela-itens {
+    background-color: var(--white);
+    max-width: 236px;
+    height: 380px;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    display: flex;
+    align-self: center;
+    flex-direction: column;
+    padding: 15px;
+    box-shadow: 20px;
+
+}
+
+.conteudo-txt {
+    padding-left: 10px;
+
+}
+
+
+img {
+    max-width: 240px;
+    height: 410px;
+    border-bottom-left-radius: 10px;
+    border-top-left-radius: 10px;
+
+}
+
+
+.btn-add {
+    background-color: var(--darkcyan);
+    border-color: var(--darkcyan);
+    font-family: var(--familyF);
+    color: white;
+    font-size: 15px;
+    text-align: center;
+    width: 185px;
+    margin: 13px;
+    height: 45px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+    position: relative;
+    top: -175px;
+
+}
+
+.risco-desconto {
+    font-size: 12px;
+    position: relative;
+    top: -6px;
+    color: var(--darkgrayishblue);
+    margin: 6px;
+}
+
+.fa-shopping-cart {
+    letter-spacing: 10px;
+}
+
+
+
+@media (max-width: 375px) {
+
+    body {
+        background-color: var(--cream);
+        display: grid;
+
+
+    }
+
+
+    .tabela-itens {
+
+        background-color: var(--white);
+        border-radius: 0 0 10px 10px;
+
+        max-width: 100%;
+        max-height: 100%;
+
+    }
+
+
+    img {
+
+        background-image: url(./images/image-product-mobile.jpg);
+        max-width: 100%;
+        max-height: 100%;
+        border-radius: 10px 10px 0 0;
+        position: relative;
+        display: flex;
+        justify-self: center;
+
+
+    }
+
+
+
+    .btn-add {
+        max-width: 170px;
+        font-size: 14px;
+        display: flex;
+        justify-content: center;
+        justify-self: center;
+        margin: 5px;
+
+
+    }
+
+    .attribution {
+        position: relative;
+        top: 30px;
+    }
+
+}
